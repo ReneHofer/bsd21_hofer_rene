@@ -50,7 +50,12 @@ If you encounter any problems or difficulties while running this program you can
 
 Contributions of any kind are welcome. If you have any ideas to improve the program, I'd invite you to contact me via email at rhrenehofer@gmail.com, to discuss them.
 
+## Author Information
+
+[My personal GitHub profile](https://github.com/ReneHofer)
+[Homepage of my university](https://www.campus02.at/)
+
 List of all my Configuration management exercises:
 
 -[exercise1](exercise1.md)
-- coming soon
+-[exercise2](exercise2.md)
