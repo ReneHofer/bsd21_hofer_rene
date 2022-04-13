@@ -57,5 +57,6 @@ Contributions of any kind are welcome. If you have any ideas to improve the prog
 
 List of all my Configuration management exercises:
 
--[exercise1](exercise1.md)
+-[exercise1](exercise1.md)  
 -[exercise2](exercise2.md)
+-[exercise3](exercise3.md)
