@@ -4,14 +4,20 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Testing Calculator Implementation")
+@DisplayName("Testing Calculator Implementations")
 public class JUnitTest {
     private double value1;
     private double value2;
     private double result;
+    Calculator test;
+
+    @BeforeEach
+    void setUp() {
+        test = new Calculator();
+    }
+
 
 
 
@@ -19,7 +25,7 @@ public class JUnitTest {
     void testAdd() {
         value1=2;
         value2=3;
-        result = Calculator.add(value1,value2);
+        result = test.add(value1,value2);
         assertTrue(result == 5);
 
     }
@@ -29,14 +35,14 @@ public class JUnitTest {
         value1 = -2;
         value2 = 6;
         result = value1+value2;
-        assertEquals(result, Calculator.add(value1,value2));
+        assertEquals(result, test.add(value1,value2));
     }
 
     @Test
     void testMinus() {
         value1=5;
         value2=3;
-        result = Calculator.minus(value1,value2);
+        result = test.minus(value1,value2);
         assertTrue(result == 2);
     }
     @Test
@@ -44,13 +50,13 @@ public class JUnitTest {
         value1 = -2;
         value2 = 6;
         result = value1-value2;
-        assertEquals(result, Calculator.minus(value1,value2));
+        assertEquals(result, test.minus(value1,value2));
     }
     @Test
     void testDivide() {
         value1 = 10;
         value2 = 5;
-        result = Calculator.divide(value1,value2);
+        result = test.divide(value1,value2);
         assertTrue(result == 2);
     }
     @Test
@@ -58,13 +64,13 @@ public class JUnitTest {
         value1 = -2;
         value2 = 6;
         result = value1/value2;
-        assertEquals(result, Calculator.divide(value1,value2));
+        assertEquals(result, test.divide(value1,value2));
     }
     @Test
     void testMultiply() {
         value1 = 2;
         value2 = 5;
-        result = Calculator.multiply(value1,value2);
+        result = test.multiply(value1,value2);
         assertTrue(result == 10);
     }
     @Test
@@ -72,6 +78,25 @@ public class JUnitTest {
         value1 = -2;
         value2 = 6;
         result = value1/value2;
-        assertEquals(result, Calculator.divide(value1,value2));
+        assertEquals(result, test.divide(value1,value2));
+    }
+
+    @Test
+    void testFactorial() {
+        value1 = 5;
+        result = 2*3*4*5;
+        assertEquals(result, test.factorial((int) value1));
+
+    }
+    @Test
+    void testFactorial2() {
+        value1 = -2;
+        assertNotEquals(-2, value1);
+    }
+    @Test
+    void testFactorial3() {
+        value1 =3;
+    result= test.factorial((int) value1);
+    assertTrue(result== 6);
     }
 }

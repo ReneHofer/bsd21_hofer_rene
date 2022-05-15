@@ -27,10 +27,24 @@ public class Calculator {
                 return result;
         }
 
+        public static long factorial(int number1){
+                long result =1;
+                if (number1 <= 0){
+                        return 0;
+                }
+                else {
+                for (int i = 2; i <= number1; i++) {
+                        result = result * i;
+                }
+                }
+                return 0;
+        }
+
         public static void main(String[] args){
                add(number1, number2);
                minus(number1,number2);
                divide(number1,number2);
                multiply(number1,number2);
+               factorial(5);
         }
 }
