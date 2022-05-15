@@ -91,7 +91,7 @@ public class JUnitTest {
     @Test
     void testFactorial2() {
         value1 = -2;
-        assertNotEquals(-2, value1);
+        assertNotEquals(0, value1);
     }
     @Test
     void testFactorial3() {

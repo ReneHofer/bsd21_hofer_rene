@@ -37,7 +37,7 @@ public class Calculator {
                         result = result * i;
                 }
                 }
-                return 0;
+                return result;
         }
 
         public static void main(String[] args){
