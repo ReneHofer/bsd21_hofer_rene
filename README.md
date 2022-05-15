@@ -60,3 +60,4 @@ List of all my Configuration management exercises:
 -[exercise1](exercise1.md)  
 -[exercise2](exercise2.md)  
 -[exercise3](exercise3.md)
+-[exercise4](exercise4.md)

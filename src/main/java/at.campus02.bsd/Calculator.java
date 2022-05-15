@@ -9,7 +9,7 @@ public class Calculator {
         public static double add(double number1, double number2){
                 result= number1+number2;
                 System.out.println(result);
-        return result;
+                return result;
         }
         public static double minus(double number1, double number2){
                 result = number1-number2;
